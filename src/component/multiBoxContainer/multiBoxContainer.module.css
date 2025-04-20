@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(2,48%);
+    grid-template-columns: repeat(2,48%);
+    width: 44%;
+    height: 85%;
+}
+
+.red{
+    background-color: green;
+}
