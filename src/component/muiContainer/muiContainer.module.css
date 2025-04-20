@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-size: 8px;
+    -webkit-background-size: 8px;
+    background-color: #1A1A1A;
+    background: linear-gradient(0deg, #000000 30.16%, rgba(0, 0, 0, 0) 85.44%), url(/public/image/muiContainer/background_dot_dark.f64be998.png) #202020;
+}
+
+.contentContainer{
+    padding: 20px 30px;
+    height: auto;
+}
+
+.titleSection{
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0rem;
+    line-height: 1.7600000000000002rem;
+}
+
+.newsContainer{
+    display: flex;
+    width: 98%;
+    height: 470px;
+    margin: 0 auto;
+}
