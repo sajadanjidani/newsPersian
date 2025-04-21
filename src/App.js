@@ -11,6 +11,31 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <MuiContainer>
+        <SliderContainer></SliderContainer>
+      </MuiContainer>
+      <MuiContainer>
+        <MuiBigBox></MuiBigBox>
+        <MultiBoxContainer></MultiBoxContainer>
+      </MuiContainer>
+      <MuiContainer>
+        <MultiBoxContainer></MultiBoxContainer>
+        <MuiBigBox></MuiBigBox>
+      </MuiContainer>
+      <MuiContainer>
+        <SliderContainer></SliderContainer>
+      </MuiContainer>
+      <MuiContainer>
+        <MuiBigBox></MuiBigBox>
+        <MultiBoxContainer></MultiBoxContainer>
+      </MuiContainer>
+      <MuiContainer>
+        <MultiBoxContainer></MultiBoxContainer>
+        <MuiBigBox></MuiBigBox>
+      </MuiContainer>
+      <MuiContainer>
+        <SliderContainer></SliderContainer>
+      </MuiContainer>
+      <MuiContainer>
         <MuiBigBox></MuiBigBox>
         <MultiBoxContainer></MultiBoxContainer>
       </MuiContainer>
