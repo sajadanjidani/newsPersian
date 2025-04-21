@@ -1,12 +1,13 @@
 import styles from './sliderContainer.module.css'
+import ItemSlider from '../itemSlider/itemSlider'
 
 const SliderContainer = () => {
     return(
         <div className={styles.container}>
-            <div className={styles.green}></div>
-            <div className={styles.green}></div>
-            <div className={styles.green}></div>
-            <div className={styles.green}></div>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
         </div>
     )
 }
