@@ -6,3 +6,18 @@
     width: 44%;
     height: 85%;
 }
+
+@media (max-width : 1024px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width : 450px){
+    .container{
+        justify-content: center;
+        gap: 70px;
+        grid-template-rows: repeat(4,15%);
+        grid-template-columns: repeat(1,96%);
+    }
+}

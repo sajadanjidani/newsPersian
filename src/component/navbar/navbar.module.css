@@ -38,3 +38,12 @@
 .listbox > ul > li{
     list-style: none;
 }
+
+@media (max-width : 450px){
+    .listbox{
+        font-size: 15px;
+    }
+    .listbox > ul {
+        padding-right: 0;
+    }
+}

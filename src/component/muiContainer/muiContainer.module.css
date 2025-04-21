@@ -28,3 +28,15 @@
     gap: 20px;
     margin: 0 auto;
 }
+
+@media (max-width : 1024px){
+    .newsContainer{
+        display: grid;
+    }
+}
+
+@media (max-width : 450px){
+    .contentContainer{
+        padding: 20px 0;
+    }
+}

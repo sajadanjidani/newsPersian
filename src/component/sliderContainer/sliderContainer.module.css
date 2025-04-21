@@ -4,8 +4,13 @@
     grid-template-columns: repeat(4,24%);
     width: 99%;
     height: 220px;
+    overflow: hidden;
 }
 
-.green{
-    background-color: green;
+@media (max-width : 450px){
+    .container{
+        box-sizing: border-box;
+        padding: 0 10px;
+        grid-template-columns: repeat(4,190px);
+    }
 }
