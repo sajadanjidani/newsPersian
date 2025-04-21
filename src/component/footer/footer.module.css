@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 30% 50%;
+}
+
+.logobox{
+    display: grid;
+    align-items: end;
+    justify-content: center;
+}
+
+.logo{
+    width: 140px;
+    height: 70px;
+    background-color: white;
+}
+
+
+.listbox{
+    display: grid;
+    color: white;
+    align-items: end;
+    justify-content: center;
+}
+
+.listbox > ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
