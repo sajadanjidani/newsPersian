@@ -5,6 +5,9 @@ const MultiBoxContainer = () => {
     return(
         <div className={styles.container}>
             <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
         </div>
     )
 }

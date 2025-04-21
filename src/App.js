@@ -13,6 +13,13 @@ function App() {
         <MuiBigBox></MuiBigBox>
         <MultiBoxContainer></MultiBoxContainer>
       </MuiContainer>
+      <MuiContainer>
+        <MultiBoxContainer></MultiBoxContainer>
+        <MuiBigBox></MuiBigBox>
+      </MuiContainer>
+      <MuiContainer>
+        
+      </MuiContainer>
     </div>
   );
 }

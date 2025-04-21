@@ -1,8 +1,6 @@
 .container{
     width: 100%;
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
     background-size: 8px;
     -webkit-background-size: 8px;
     background-color: #1A1A1A;
@@ -27,6 +25,6 @@
 .newsContainer{
     display: flex;
     width: 98%;
-    height: 470px;
+    gap: 20px;
     margin: 0 auto;
 }
