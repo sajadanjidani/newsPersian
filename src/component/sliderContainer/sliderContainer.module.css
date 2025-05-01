@@ -1,7 +1,7 @@
 .container{
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(4,300px);
+    grid-template-columns: repeat(4,298px);
     width: 99%;
     height: 220px;
     overflow: hidden;
@@ -9,6 +9,8 @@
 
 @media (max-width : 450px){
     .container{
+        grid-template-columns: repeat(4,350px);
+        height: 280px;
         box-sizing: border-box;
         padding: 0 10px;
     }

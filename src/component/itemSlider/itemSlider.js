@@ -1,10 +1,12 @@
 import styles from './itemSlider.module.css'
 
-const ItemSlider = () => {
+const ItemSlider = ({title, imageSrc}) => {
     return(
         <div className={styles.container}>
-            <div className={styles.imagebox}></div>
-            <h3 className={styles.title}>فوتبال رعال و اتلتیک</h3>
+            <div className={styles.imagebox}>
+                <img className={styles.imageSlider} src={imageSrc} alt='itemPoster'></img>
+            </div>
+            <h3 className={styles.title}>{title}</h3>
         </div>
     )
 }
