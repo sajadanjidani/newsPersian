@@ -35,9 +35,11 @@ function App() {
 
   return (
     <div className="App">
+
       {/* header */}
       <Navbar></Navbar>
-      {/* slider one */}
+
+      {/* new News slider */}
       <MuiContainer>
         <SliderContainer>
             <ItemSlider {...sliderItemInfo[0]}></ItemSlider>
@@ -46,15 +48,22 @@ function App() {
             <ItemSlider {...sliderItemInfo[3]}></ItemSlider>
         </SliderContainer>
       </MuiContainer>
+
+      {/* - - start footbal section - - */}
+
+      {/* new footbal News */}
       <MuiContainer>
         <MuiBigBox></MuiBigBox>
         <MultiBoxContainer></MultiBoxContainer>
       </MuiContainer>
+
+      {/* The most controversial footbal News */}
       <MuiContainer>
         <MultiBoxContainer></MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
-      {/* slider two */}
+
+      {/* other footbal News slider */}
       <MuiContainer>
         <SliderContainer>
             <ItemSlider {...sliderItemInfo[4]}></ItemSlider>
@@ -63,15 +72,24 @@ function App() {
             <ItemSlider {...sliderItemInfo[7]}></ItemSlider>
         </SliderContainer>
       </MuiContainer>
+
+      {/* - - end footbal section - - */}
+
+      {/* - - start game section - - */}
+
+      {/* new game News */}
       <MuiContainer>
         <MuiBigBox></MuiBigBox>
         <MultiBoxContainer></MultiBoxContainer>
       </MuiContainer>
+
+      {/* The most controversial game News */}
       <MuiContainer>
         <MultiBoxContainer></MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
-      {/* slider three */}
+
+      {/* other game News slider */}
       <MuiContainer>
         <SliderContainer>
             <ItemSlider {...sliderItemInfo[8]}></ItemSlider>
@@ -80,15 +98,24 @@ function App() {
             <ItemSlider {...sliderItemInfo[11]}></ItemSlider>
         </SliderContainer>
       </MuiContainer>
+
+      {/* - - end footbal section - - */}
+
+      {/* - - start video section - - */}
+
+      {/* new video News */}
       <MuiContainer>
         <MuiBigBox></MuiBigBox>
         <MultiBoxContainer></MultiBoxContainer>
       </MuiContainer>
+
+      {/* The most controversial video News */}
       <MuiContainer>
         <MultiBoxContainer></MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
-      {/* slider four */}
+
+      {/* other game News slider */}
       <MuiContainer>
         <SliderContainer>
             <ItemSlider {...sliderItemInfo[12]}></ItemSlider>
@@ -97,8 +124,12 @@ function App() {
             <ItemSlider {...sliderItemInfo[15]}></ItemSlider>
         </SliderContainer>
       </MuiContainer>
+
+      {/* - - end video section - - */}
+
       {/* footer */}
       <Footer></Footer>
+
     </div>
   );
 }
