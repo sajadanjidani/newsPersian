@@ -10,6 +10,19 @@ import Footer from './component/footer/footer';
 
 function App() {
 
+  let titleMuiContainer = [
+    {id: 1, title: 'جدیدترین اخبار'},
+    {id: 2, title: 'جدیدترین اخبار فوتبالی'},
+    {id: 3, title: 'جنجالی ترین اخبار فوتبالی'},
+    {id: 4, title: 'دیگر اخبار فوتبالی'},
+    {id: 5, title: 'جدیدترین اخبار بازیها'},
+    {id: 6, title: 'جنجالی ترین اخبار بازیها'},
+    {id: 7, title: 'دیگر اخبار بازیها'},
+    {id: 8, title: 'جدیدترین اخبار فیلم و سریال'},
+    {id: 9, title: 'جنجالی ترین اخبار فیلم و سریال'},
+    {id: 10, title: 'دیگر اخبار فیلم و سریال'},
+  ]
+
   let sliderItemInfo = [
     // slider one
     {id: 1,title: 'فوتبال رئال مادرید و بارسلونا',imageSrc: 'image/itemSlider/RealMadridVsBarselona.jpg'},
@@ -40,7 +53,7 @@ function App() {
       <Navbar></Navbar>
 
       {/* new News slider */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[0]}>
         <SliderContainer>
             <ItemSlider {...sliderItemInfo[0]}></ItemSlider>
             <ItemSlider {...sliderItemInfo[1]}></ItemSlider>
@@ -52,19 +65,19 @@ function App() {
       {/* - - start footbal section - - */}
 
       {/* new footbal News */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[1]}>
         <MuiBigBox></MuiBigBox>
         <MultiBoxContainer></MultiBoxContainer>
       </MuiContainer>
 
       {/* The most controversial footbal News */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[2]}>
         <MultiBoxContainer></MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
 
       {/* other footbal News slider */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[3]}>
         <SliderContainer>
             <ItemSlider {...sliderItemInfo[4]}></ItemSlider>
             <ItemSlider {...sliderItemInfo[5]}></ItemSlider>
@@ -78,19 +91,19 @@ function App() {
       {/* - - start game section - - */}
 
       {/* new game News */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[4]}>
         <MuiBigBox></MuiBigBox>
         <MultiBoxContainer></MultiBoxContainer>
       </MuiContainer>
 
       {/* The most controversial game News */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[5]}>
         <MultiBoxContainer></MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
 
       {/* other game News slider */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[6]}>
         <SliderContainer>
             <ItemSlider {...sliderItemInfo[8]}></ItemSlider>
             <ItemSlider {...sliderItemInfo[9]}></ItemSlider>
@@ -104,19 +117,19 @@ function App() {
       {/* - - start video section - - */}
 
       {/* new video News */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[7]}>
         <MuiBigBox></MuiBigBox>
         <MultiBoxContainer></MultiBoxContainer>
       </MuiContainer>
 
       {/* The most controversial video News */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[8]}>
         <MultiBoxContainer></MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
 
       {/* other game News slider */}
-      <MuiContainer>
+      <MuiContainer {...titleMuiContainer[9]}>
         <SliderContainer>
             <ItemSlider {...sliderItemInfo[12]}></ItemSlider>
             <ItemSlider {...sliderItemInfo[13]}></ItemSlider>

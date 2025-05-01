@@ -1,10 +1,10 @@
 import styles from './muiContainer.module.css'
 
-const MuiContainer = ({children}) => {
+const MuiContainer = ({children, title}) => {
     return(
         <div className={styles.container}>
             <div className={styles.contentContainer}>
-                <h1 className={styles.titleSection}>فوتبال</h1>
+                <h1 className={styles.titleSection}>{title}</h1>
                 <div className={styles.newsContainer}>
                     {children}
                 </div>
