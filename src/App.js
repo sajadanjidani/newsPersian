@@ -23,52 +23,29 @@ function App() {
     {id: 9, title: 'جنجالی ترین اخبار فیلم و سریال'},
     {id: 10, title: 'دیگر اخبار فیلم و سریال'},
   ]
-
-  let sliderItemInfo = [
-    // slider one
-    {id: 1,title: 'فوتبال رئال مادرید و بارسلونا',imageSrc: 'image/itemSlider/RealMadridVsBarselona.jpg'},
-    {id: 2,title: 'فوتبال رئال مادرید و اتلتیکو مادرید',imageSrc: 'image/itemSlider/RealMadridVsAtleticoMadrid.jpg'},
-    {id: 3,title: 'فوتبال رئال مادرید و اتلتیکو بیلبائو',imageSrc: 'image/itemSlider/RealMadridVsAtleticoBilbao.jpg'},
-    {id: 4,title: 'فوتبال رئال مادرید و آرسنال',imageSrc: 'image/itemSlider/RealMadridVsArsenal.jpg'},
-    // slider two
-    {id: 5,title: 'فوتبال بارسلونا و اتلتیکو مادرید',imageSrc: 'image/itemSlider/BarcelonaVsatleticoMadrid.jpg'},
-    {id: 6,title: 'فوتبال بارسلونا و اینترمیلان',imageSrc: 'image/itemSlider/BarcelonaVsInter.jpg'},
-    {id: 7,title: 'فوتبال اینترمیلان و اس میلان',imageSrc: 'image/itemSlider/AcMilanVsInterMilan.jpg'},
-    {id: 8,title: 'فوتبال پرسپولیس و استقلال',imageSrc: 'image/itemSlider/EsteghlalVsPersepolis.jpg'},
-    // slider three
-    {id: 9,title: 'فوتبال سپاهان و ذوب آهن',imageSrc: 'image/itemSlider/ZobahanVsSpahan.jpg'},
-    {id: 10,title: 'فوتبال اتلتیکو مادرید و اتلتیکو بیلبائو',imageSrc: 'image/itemSlider/AtleticoMadridVsAthleticBilbao.jpeg'},
-    {id: 11,title: 'فوتبال دورتمند و بایرن موریخ',imageSrc: 'image/itemSlider/DortmundVsBayernmunich.webp'},
-    {id: 12,title: 'فوتبال منچستریونایتد و منچسترسیتی',imageSrc: 'image/itemSlider/ManchesterCityVsManchesterUnited.jpg'},
-    // slider four
-    {id: 13,title: 'فوتبال الاتحاد و الهلال',imageSrc: 'image/itemSlider/AlHilalVsAlIttihad.jpg'},
-    {id: 14,title: 'فوتبال النصر و الهلال',imageSrc: 'image/itemSlider/AlNasrVsAlHilal.webp'},
-    {id: 15,title: 'فوتبال النصر و الاتحاد',imageSrc: 'image/itemSlider/AlIttihadVsAlNassr.jpg'},
-    {id: 16,title: 'فوتبال النصر و اینترمیامی',imageSrc: 'image/itemSlider/InterMiamiVsAlNassr.jpg'},
-  ]
-
   // Footbal Info News
 
   let newFootbalNews = [
-    {id: 1, title: 'فوتبال رئال مادرید و بارسلونا', imageSrc: 'image/itemSlider/RealMadridVsBarselona.jpg'},
-    {id: 2, title: 'فوتبال رئال مادرید و اتلتیکو مادرید', imageSrc: 'image/itemSlider/RealMadridVsAtleticoMadrid.jpg'},
-    {id: 3, title: 'فوتبال رئال مادرید و اتلتیکو بیلبائو', imageSrc: 'image/itemSlider/RealMadridVsAtleticoBilbao.jpg'},
-    {id: 4, title: 'فوتبال رئال مادرید و آرسنال', imageSrc: 'image/itemSlider/RealMadridVsArsenal.jpg'},
-    {id: 5, title: 'فوتبال بارسلونا و اتلتیکو مادرید', imageSrc: 'image/itemSlider/BarcelonaVsatleticoMadrid.jpg'},
+    {id: 1, title: 'فوتبال رئال مادرید و بارسلونا', imageSrc: 'image/itemSlider/Footbal/New/RealMadridVsBarselona.jpg'},
+    {id: 2, title: 'فوتبال رئال مادرید و اتلتیکو مادرید', imageSrc: 'image/itemSlider/Footbal/New/RealMadridVsAtleticoMadrid.jpg'},
+    {id: 3, title: 'فوتبال رئال مادرید و اتلتیکو بیلبائو', imageSrc: 'image/itemSlider/Footbal/New/RealMadridVsAtleticoBilbao.jpg'},
+    {id: 4, title: 'فوتبال رئال مادرید و آرسنال', imageSrc: 'image/itemSlider/Footbal/New/RealMadridVsArsenal.jpg'},
+    {id: 5, title: 'فوتبال بارسلونا و اتلتیکو مادرید', imageSrc: 'image/itemSlider/Footbal/New/BarcelonaVsatleticoMadrid.jpg'},
   ]
 
   let controversialFootbalNews = [
-    {id: 1, title: '', imageSrc: ''},
-    {id: 2, title: '', imageSrc: ''},
-    {id: 3, title: '', imageSrc: ''},
-    {id: 4, title: '', imageSrc: ''},
+    {id: 1, title: 'فوتبال بارسلونا و اینترمیلان', imageSrc: 'image/itemSlider/Footbal/Controversial/BarcelonaVsInter.jpg'},
+    {id: 2, title: 'فوتبال اینترمیلان و اس میلان', imageSrc: 'image/itemSlider/Footbal/Controversial/AcMilanVsInterMilan.jpg'},
+    {id: 3, title: 'فوتبال اتلتیکو مادرید و اتلتیکو بیلبائو', imageSrc: 'image/itemSlider/Footbal/Controversial/AtleticoMadridVsAthleticBilbao.jpeg'},
+    {id: 4, title: 'فوتبال دورتمند و بایرن موریخ', imageSrc: 'image/itemSlider/Footbal/Controversial/DortmundVsBayernmunich.webp'},
+    {id: 5, title: 'فوتبال منچستریونایتد و منچسترسیتی', imageSrc: 'image/itemSlider/Footbal/Controversial/ManchesterCityVsManchesterUnited.jpg'},
   ]
 
   let otherFootbalNews = [
-    {id: 1, title: '', imageSrc: ''},
-    {id: 2, title: '', imageSrc: ''},
-    {id: 3, title: '', imageSrc: ''},
-    {id: 4, title: '', imageSrc: ''},
+    {id: 1,title: 'فوتبال الاتحاد و الهلال',imageSrc: 'image/itemSlider/Footbal/Other/AlHilalVsAlIttihad.jpg'},
+    {id: 2,title: 'فوتبال النصر و الهلال',imageSrc: 'image/itemSlider/Footbal/Other/AlNasrVsAlHilal.webp'},
+    {id: 3,title: 'فوتبال النصر و الاتحاد',imageSrc: 'image/itemSlider/Footbal/Other/AlIttihadVsAlNassr.jpg'},
+    {id: 4,title: 'فوتبال النصر و اینترمیامی',imageSrc: 'image/itemSlider/Footbal/Other/InterMiamiVsAlNassr.jpg'},
   ]
 
   // Game Info News
@@ -128,10 +105,10 @@ function App() {
       {/* new News slider */}
       <MuiContainer {...titleMuiContainer[0]}>
         <SliderContainer>
-            <ItemSlider {...sliderItemInfo[0]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[1]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[2]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[3]}></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
         </SliderContainer>
       </MuiContainer>
 
@@ -151,21 +128,21 @@ function App() {
       {/* The most controversial footbal News */}
       <MuiContainer {...titleMuiContainer[2]}>
         <MultiBoxContainer>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox {...controversialFootbalNews[1]}></MuiSmallBox>
+            <MuiSmallBox {...controversialFootbalNews[2]}></MuiSmallBox>
+            <MuiSmallBox {...controversialFootbalNews[3]}></MuiSmallBox>
+            <MuiSmallBox {...controversialFootbalNews[4]}></MuiSmallBox>
         </MultiBoxContainer>
-        <MuiBigBox></MuiBigBox>
+        <MuiBigBox {...controversialFootbalNews[0]}></MuiBigBox>
       </MuiContainer>
 
       {/* other footbal News slider */}
       <MuiContainer {...titleMuiContainer[3]}>
         <SliderContainer>
-            <ItemSlider {...sliderItemInfo[4]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[5]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[6]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[7]}></ItemSlider>
+            <ItemSlider {...otherFootbalNews[0]}></ItemSlider>
+            <ItemSlider {...otherFootbalNews[1]}></ItemSlider>
+            <ItemSlider {...otherFootbalNews[2]}></ItemSlider>
+            <ItemSlider {...otherFootbalNews[3]}></ItemSlider>
         </SliderContainer>
       </MuiContainer>
 
@@ -198,10 +175,10 @@ function App() {
       {/* other game News slider */}
       <MuiContainer {...titleMuiContainer[6]}>
         <SliderContainer>
-            <ItemSlider {...sliderItemInfo[8]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[9]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[10]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[11]}></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
         </SliderContainer>
       </MuiContainer>
 
@@ -234,10 +211,10 @@ function App() {
       {/* other game News slider */}
       <MuiContainer {...titleMuiContainer[9]}>
         <SliderContainer>
-            <ItemSlider {...sliderItemInfo[12]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[13]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[14]}></ItemSlider>
-            <ItemSlider {...sliderItemInfo[15]}></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
+            <ItemSlider></ItemSlider>
         </SliderContainer>
       </MuiContainer>
 
