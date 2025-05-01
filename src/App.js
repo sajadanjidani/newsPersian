@@ -141,10 +141,10 @@ function App() {
       <MuiContainer {...titleMuiContainer[1]}>
         <MuiBigBox {...{...newFootbalNews[0]}}></MuiBigBox>
         <MultiBoxContainer>
+            <MuiSmallBox {...newFootbalNews[1]}></MuiSmallBox>
             <MuiSmallBox {...newFootbalNews[2]}></MuiSmallBox>
             <MuiSmallBox {...newFootbalNews[3]}></MuiSmallBox>
             <MuiSmallBox {...newFootbalNews[4]}></MuiSmallBox>
-            <MuiSmallBox {...newFootbalNews[5]}></MuiSmallBox>
         </MultiBoxContainer>
       </MuiContainer>
 
