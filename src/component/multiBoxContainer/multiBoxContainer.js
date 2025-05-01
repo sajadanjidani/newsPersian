@@ -1,13 +1,9 @@
 import styles from './multiBoxContainer.module.css'
-import MuiSmallBox from '../muiSmallBox/muiSmallBox'
 
-const MultiBoxContainer = () => {
+const MultiBoxContainer = ({children}) => {
     return(
         <div className={styles.container}>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
+            {children}
         </div>
     )
 }

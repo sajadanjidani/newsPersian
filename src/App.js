@@ -6,6 +6,7 @@ import MuiBigBox from './component/muiBigBox/muiBigBox';
 import MultiBoxContainer from './component/multiBoxContainer/multiBoxContainer';
 import SliderContainer from './component/sliderContainer/sliderContainer';
 import ItemSlider from './component/itemSlider/itemSlider';
+import MuiSmallBox from './component/muiSmallBox/muiSmallBox';
 import Footer from './component/footer/footer';
 
 function App() {
@@ -49,11 +50,11 @@ function App() {
   // Footbal Info News
 
   let newFootbalNews = [
-    {id: 1, title: '', imageSrc: ''},
-    {id: 2, title: '', imageSrc: ''},
-    {id: 3, title: '', imageSrc: ''},
-    {id: 4, title: '', imageSrc: ''},
-    {id: 5, title: '', imageSrc: ''},
+    {id: 1, title: 'فوتبال رئال مادرید و بارسلونا', imageSrc: 'image/itemSlider/RealMadridVsBarselona.jpg'},
+    {id: 2, title: 'فوتبال رئال مادرید و اتلتیکو مادرید', imageSrc: 'image/itemSlider/RealMadridVsAtleticoMadrid.jpg'},
+    {id: 3, title: 'فوتبال رئال مادرید و اتلتیکو بیلبائو', imageSrc: 'image/itemSlider/RealMadridVsAtleticoBilbao.jpg'},
+    {id: 4, title: 'فوتبال رئال مادرید و آرسنال', imageSrc: 'image/itemSlider/RealMadridVsArsenal.jpg'},
+    {id: 5, title: 'فوتبال بارسلونا و اتلتیکو مادرید', imageSrc: 'image/itemSlider/BarcelonaVsatleticoMadrid.jpg'},
   ]
 
   let controversialFootbalNews = [
@@ -139,12 +140,22 @@ function App() {
       {/* new footbal News */}
       <MuiContainer {...titleMuiContainer[1]}>
         <MuiBigBox></MuiBigBox>
-        <MultiBoxContainer></MultiBoxContainer>
+        <MultiBoxContainer>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+        </MultiBoxContainer>
       </MuiContainer>
 
       {/* The most controversial footbal News */}
       <MuiContainer {...titleMuiContainer[2]}>
-        <MultiBoxContainer></MultiBoxContainer>
+        <MultiBoxContainer>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+        </MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
 
@@ -165,12 +176,22 @@ function App() {
       {/* new game News */}
       <MuiContainer {...titleMuiContainer[4]}>
         <MuiBigBox></MuiBigBox>
-        <MultiBoxContainer></MultiBoxContainer>
+        <MultiBoxContainer>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+        </MultiBoxContainer>
       </MuiContainer>
 
       {/* The most controversial game News */}
       <MuiContainer {...titleMuiContainer[5]}>
-        <MultiBoxContainer></MultiBoxContainer>
+        <MultiBoxContainer>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+        </MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
 
@@ -191,12 +212,22 @@ function App() {
       {/* new video News */}
       <MuiContainer {...titleMuiContainer[7]}>
         <MuiBigBox></MuiBigBox>
-        <MultiBoxContainer></MultiBoxContainer>
+        <MultiBoxContainer>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+        </MultiBoxContainer>
       </MuiContainer>
 
       {/* The most controversial video News */}
       <MuiContainer {...titleMuiContainer[8]}>
-        <MultiBoxContainer></MultiBoxContainer>
+        <MultiBoxContainer>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox></MuiSmallBox>
+        </MultiBoxContainer>
         <MuiBigBox></MuiBigBox>
       </MuiContainer>
 
