@@ -139,12 +139,12 @@ function App() {
 
       {/* new footbal News */}
       <MuiContainer {...titleMuiContainer[1]}>
-        <MuiBigBox></MuiBigBox>
+        <MuiBigBox {...{...newFootbalNews[0]}}></MuiBigBox>
         <MultiBoxContainer>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
-            <MuiSmallBox></MuiSmallBox>
+            <MuiSmallBox {...newFootbalNews[2]}></MuiSmallBox>
+            <MuiSmallBox {...newFootbalNews[3]}></MuiSmallBox>
+            <MuiSmallBox {...newFootbalNews[4]}></MuiSmallBox>
+            <MuiSmallBox {...newFootbalNews[5]}></MuiSmallBox>
         </MultiBoxContainer>
       </MuiContainer>
 
