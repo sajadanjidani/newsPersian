@@ -46,6 +46,78 @@ function App() {
     {id: 16,title: 'فوتبال النصر و اینترمیامی',imageSrc: 'image/itemSlider/InterMiamiVsAlNassr.jpg'},
   ]
 
+  // Footbal Info News
+
+  let newFootbalNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+    {id: 5, title: '', imageSrc: ''},
+  ]
+
+  let controversialFootbalNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+  ]
+
+  let otherFootbalNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+  ]
+
+  // Game Info News
+
+  let newGameNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+    {id: 5, title: '', imageSrc: ''},
+  ]
+
+  let controversialGameNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+  ]
+
+  let otherGameNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+  ]
+
+  // Video Info News
+
+  let newVideoNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+    {id: 5, title: '', imageSrc: ''},
+  ]
+
+  let controversialVideoNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+  ]
+
+  let otherVideoNews = [
+    {id: 1, title: '', imageSrc: ''},
+    {id: 2, title: '', imageSrc: ''},
+    {id: 3, title: '', imageSrc: ''},
+    {id: 4, title: '', imageSrc: ''},
+  ]
+
   return (
     <div className="App">
 
