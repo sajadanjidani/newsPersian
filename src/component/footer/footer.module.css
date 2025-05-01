@@ -11,6 +11,11 @@
 }
 
 .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: bolder;
     width: 140px;
     height: 70px;
     background-color: white;

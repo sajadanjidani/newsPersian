@@ -4,7 +4,7 @@ const Footer = () => {
     return(
         <div className={styles.container}>
             <div className={styles.logobox}>
-                <div className={styles.logo}></div>
+                <div className={styles.logo}>P-NEWS</div>
             </div>
             <div className={styles.listbox}>
                 <ul>

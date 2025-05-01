@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className={styles.container}>
             <div className={styles.contentContainer}>
                 <div className={styles.iconbox}></div>
-                <div className={styles.imagebox}></div>
+                <div className={styles.imagebox}>P-NEWS</div>
                 <div className={styles.listbox}>
                     <ul>
                         <li>بازی</li>

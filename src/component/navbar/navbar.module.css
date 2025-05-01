@@ -20,6 +20,10 @@
 }
 
 .imagebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
     width: 100px;
     height: 50px;
     background-color: white;
