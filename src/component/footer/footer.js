@@ -9,13 +9,13 @@ const Footer = () => {
             <div className={styles.listbox}>
                 <ul>
                     <li>اخبار بازی</li>
-                    <li>/</li>
+                    <li className={styles.customeListStyle}>/</li>
                     <li>داغ ترینها</li>
-                    <li>/</li>
+                    <li className={styles.customeListStyle}>/</li>
                     <li>تازه ترینها</li>
-                    <li>/</li>
+                    <li className={styles.customeListStyle}>/</li>
                     <li>اخبار فوتبال</li>
-                    <li>/</li>
+                    <li className={styles.customeListStyle}>/</li>
                     <li>اخبار فیلم و سریال</li>
                 </ul>
             </div>
