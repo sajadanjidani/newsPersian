@@ -29,9 +29,9 @@ const Navbar = () => {
                 <div className={styles.imagebox}>P-NEWS</div>
                 <div className={styles.listbox}>
                     <ul>
-                        <li>بازی</li>
-                        <li>فوتبال</li>
-                        <li>فیلم و سریال</li>
+                        <li><a href='/public/index.html#Game'>بازی</a></li>
+                        <li><a href='/public/index.html#Footbal'>فوتبال</a></li>
+                        <li><a href='/public/index.html#Video'>فیلم و سریال</a></li>
                     </ul>
                 </div>
             </div>
