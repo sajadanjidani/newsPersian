@@ -85,7 +85,7 @@ a:hover{
     .contentContainer{
         justify-content: space-between;
     }
-    .listbox{
+    .listboxHeader{
         display: none;
     }
     .iconbox{
@@ -135,6 +135,22 @@ a:hover{
     transform: scale(1.1);
 }
 
+@media (max-width : 1024px){
+    .container{
+        grid-template-columns: repeat(3,33%);
+    }
+}
+@media (max-width : 850px){
+    .container{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+@media (max-width : 450px){
+    .container{
+        grid-template-columns: repeat(1,100%);
+    }
+}
+
 /* footer */
 
 .footerContainer{
@@ -181,6 +197,9 @@ a:hover{
 }
 
 @media (max-width : 450px){
+    .listbox{  
+        justify-items: center;
+    }
     .listbox > ul{
         display: grid;
         width: 80%;
