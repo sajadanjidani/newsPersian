@@ -25,6 +25,10 @@ body {
     background-color: black;
 }
 
+#logoHome{
+    color: black;
+}
+
 .contentContainer{
     display: flex;
     gap: 40px;
