@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* header */
+
+.headerContainer{
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    background-color: black;
+}
+
+#logoHome{
+    color: black;
+}
+
+.contentContainer{
+    display: flex;
+    gap: 40px;
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.iconbox{
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.openMenuBtn{
+    display: block;
+}
+.closeMenuBtn{
+    display: none;
+}
+
+.imagebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+}
+
+.listboxHeader{
+    width: 100%;
+    align-content: center;
+}
+
+.listboxHeader > ul{
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+.listboxHeader > ul > li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: #484848;
+}
+
+@media (max-width : 450px){
+    .contentContainer{
+        justify-content: space-between;
+    }
+    .listboxHeader{
+        display: none;
+    }
+    .iconbox{
+        display: flex;
+    }
+}
