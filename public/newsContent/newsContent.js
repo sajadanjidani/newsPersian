@@ -1,4 +1,5 @@
 const $ = document;
+let locationHash = window.location.hash
 
 // exmaple db
 let db = [
@@ -237,6 +238,28 @@ let db = [
   },
 ]
 
+let newFootbalNews = [
+    {id: 'newFootbalNews1', title: 'فوتبال رئال مادرید و بارسلونا', imageSrc: '../image/itemSlider/Footbal/New/RealMadridVsBarselona.jpg'},
+    {id: 'newFootbalNews2', title: 'فوتبال رئال مادرید و اتلتیکو مادرید', imageSrc: '../image/itemSlider/Footbal/New/RealMadridVsAtleticoMadrid.jpg'},
+    {id: 'newFootbalNews3', title: 'فوتبال رئال مادرید و اتلتیکو بیلبائو', imageSrc: '../image/itemSlider/Footbal/New/RealMadridVsAtleticoBilbao.jpg'},
+    {id: 'newFootbalNews4', title: 'فوتبال رئال مادرید و آرسنال', imageSrc: '../image/itemSlider/Footbal/New/RealMadridVsArsenal.jpg'},
+    {id: 'newFootbalNews5', title: 'فوتبال بارسلونا و اتلتیکو مادرید', imageSrc: '../image/itemSlider/Footbal/New/BarcelonaVsatleticoMadrid.jpg'},
+]
+let newGameNews = [
+    {id: 'newGameNews1', title: 'Surviving Mars: پایونیر در ماه می در متا کوئست فرود می آید', imageSrc: '../image/itemSlider/Game/New/SurvivingMars.jpg'},
+    {id: 'newGameNews2', title: 'GunGame : برسی یکی از بهترین بازی های شوتر', imageSrc: '../image/itemSlider/Game/New/GunGame.jpg'},
+    {id: 'newGameNews3', title: 'Elder Scrolls IV : رتبه بندی سری های مختلف', imageSrc: '../image/itemSlider/Game/New/ElderScrolls.jpg'},
+    {id: 'newGameNews4', title: 'Evil Dead : تارخ عرضه نسخه جدید', imageSrc: '../image/itemSlider/Game/New/EvilDead.jpg'},
+    {id: 'newGameNews5', title: 'Forza : قیمت بازی فورزا در PS5', imageSrc: '../image/itemSlider/Game/New/Forza.jpg'},
+]
+let newVideoNews = [
+    {id: 'newVideoNews1', title: 'بهترین سریال های علمی تخیلی آمریکایی', imageSrc: '../image/itemSlider/Video/New/BestVideo.jpg'},
+    {id: 'newVideoNews2', title: '۵ سریال کره‌ای مدرسه‌ای پرطرفدار که ذهن‌تو منفجر می‌کنن!', imageSrc: '../image/itemSlider/Video/New/5koraFilm.jpg'},
+    {id: 'newVideoNews3', title: 'بهترین انیمه های کمدی تاریخ که تماشای آن ها را نباید از دست داد!', imageSrc: '../image/itemSlider/Video/New/BestAnime.jpg'},
+    {id: 'newVideoNews4', title: 'بهترین سریال های علمی تخیلی اکشن', imageSrc: '../image/itemSlider/Video/New/bestSerial.jpg'},
+    {id: 'newVideoNews5', title: 'تقلب بهاره افشاری در پدرخوانده!', imageSrc: '../image/itemSlider/Video/New/gadfather.jpg'},
+]
+
 // get element
 const slider = $.querySelector(".slider");
 const mainContainer = $.querySelector('.mainContainer')
@@ -255,23 +278,47 @@ const checkNewsAddress = () => {
         `)
     }
   })
+  whatSlider()
 }
 
-// const addItemSlider = () => {
-//   newFootbalNews.forEach((news) => {
-//     slider.insertAdjacentHTML(
-//       "beforeend",
-//       `
-//             <div>
-//                 <div class='imageboxSI'>
-//                     <img class='imageSlider' src="${news.imageSrc}" alt='itemPoster' />
-//                 </div>
-//                 <h3 class='titleSI'>${news.title}</h3>
-//             </div>
-//             `
-//     );
-//   });
-// };
+const whatSlider = () => {
+  let Footbal = window.location.hash.includes('Footbal');
+  let Game = window.location.hash.includes('Game');
+  let Video = window.location.hash.includes('Video');
+  
+  if(Footbal){
+    addItemSlider(newFootbalNews)
+  }else if(Game){
+    addItemSlider(newGameNews)
+  }else if(Video){
+    addItemSlider(newVideoNews)
+  }
+
+};
+
+const addItemSlider = listSlider => {
+  for (let count = 0; count < 4; count++) {
+    let href = '#' + listSlider[count].id
+    slider.insertAdjacentHTML('beforeend',`
+        <a onClick='clickHandler()' href=${href}>
+            <div class='imageboxSI'>
+                <img class='imageSlider' src='${listSlider[count].imageSrc}' alt='itemPoster'></img>
+            </div>
+            <h3 class='titleSI'>${listSlider[count].title}</h3>
+        </a>
+      `)
+  }
+}
+
+const clickHandler = () => {
+  setTimeout(() => {
+    if(window.location.hash !== locationHash){
+      console.log('change')
+      window.location.reload();
+    }
+  }, 1)
+  
+}
 
 // add event
 window.addEventListener("load", checkNewsAddress);

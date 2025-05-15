@@ -10,10 +10,6 @@ const Footer = () => {
                 <ul>
                     <li>اخبار بازی</li>
                     <li className={styles.customeListStyle}>/</li>
-                    <li>داغ ترینها</li>
-                    <li className={styles.customeListStyle}>/</li>
-                    <li>تازه ترینها</li>
-                    <li className={styles.customeListStyle}>/</li>
                     <li>اخبار فوتبال</li>
                     <li className={styles.customeListStyle}>/</li>
                     <li>اخبار فیلم و سریال</li>
