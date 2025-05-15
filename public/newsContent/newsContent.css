@@ -97,6 +97,34 @@ a:hover{
     }
 }
 
+
+/* main */
+
+.mainContainer{
+    width: 100%;
+    height: auto;
+    color: white;
+    padding: 100px 0 40px 0;
+    background-color: rgba(0, 0, 0, 0.914);
+}
+
+.imgaebox{
+    width: 96%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: orange;
+}
+.titleText{
+    padding: 0 40px;
+}
+.contentText{
+    width: 94%;
+    text-align: justify;
+    margin: 10px auto;
+}
+
+
 /* footer */
 
 .footerContainer{
