@@ -348,3 +348,33 @@ window.addEventListener("load", checkNewsAddress);
 coverModule.addEventListener('click', moduleHandler)
 openIcon.addEventListener('click', openMenu)
 closeIcon.addEventListener('click', closeMenu)
+
+let isDragging = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  slider.classList.add('dragging');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+  e.preventDefault();
+});
+
+slider.addEventListener('mouseleave', () => {
+  isDragging = false;
+  slider.classList.remove('dragging');
+});
+
+slider.addEventListener('mouseup', () => {
+  isDragging = false;
+  slider.classList.remove('dragging');
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  slider.scrollLeft = scrollLeft - walk;
+});

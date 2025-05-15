@@ -160,16 +160,19 @@ a:hover{
 
 /* slider */
 
-.slider{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4,298px);
-    width: 93%;
-    margin: 0 auto;
-    margin-bottom: 70px;
-    padding-bottom: 20px;
-    overflow: hidden;
+.slider {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 298px);
+  width: 93%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  overflow-x: auto;
+  overflow-y: hidden; /* فقط افقی */
+  scroll-behavior: smooth;
 }
+
 
 @media (max-width : 450px){
     .slider{
