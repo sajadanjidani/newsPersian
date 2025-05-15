@@ -1,13 +1,14 @@
 import styles from './itemSlider.module.css'
 
-const ItemSlider = ({title, imageSrc}) => {
+const ItemSlider = ({id, title, imageSrc}) => {
+    let href = '../newsContent/newsContent.html#' + id
     return(
-        <div className={styles.container}>
+        <a href={href} className={styles.container}>
             <div className={styles.imagebox}>
                 <img className={styles.imageSlider} src={imageSrc} alt='itemPoster'></img>
             </div>
             <h3 className={styles.title}>{title}</h3>
-        </div>
+        </a>
     )
 }
 

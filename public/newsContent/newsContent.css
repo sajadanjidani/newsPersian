@@ -109,19 +109,26 @@ a:hover{
 }
 
 .imgaebox{
-    width: 96%;
+    width: 94%;
     height: 400px;
     margin: 0 auto;
     border-radius: 20px;
-    background-color: orange;
+    border: 2px solid white;
+    overflow: hidden;
 }
+
+.imageNews{
+    width: 100%;
+    height: 100%;
+}
+
 .titleText{
     padding: 0 40px;
 }
 .contentText{
     width: 94%;
     text-align: justify;
-    margin: 10px auto;
+    margin: 30px auto;
 }
 
 /* slider */

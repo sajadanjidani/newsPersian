@@ -1,32 +1,27 @@
 const $ = document;
 
 // exmaple db
-let newSliderNews = [
+let db = [
   {
-    id: 1,
+    id: 'newSliderNews1',
     title: "بازی اتلتیکومادرید و منچستریونایتد",
     imageSrc: "../image/itemSlider/New/atleticVsmanchester.jpg",
   },
   {
-    id: 2,
+    id: 'newSliderNews2',
     title: "محمدرضا گلزار : بازیگر یا خواننده ؟",
     imageSrc: "../image/itemSlider/New/golzaaar.webp",
   },
   {
-    id: 3,
+    id: 'newSliderNews3',
     title: "رئال بتیس در برابر فیورنتینا",
     imageSrc: "../image/itemSlider/New/RealBetisVsFiorentina.png",
   },
   {
-    id: 4,
+    id: 'newSliderNews4',
     title: "وینرونی : رونالدو یعنی رونالدو نازاریو",
     imageSrc: "../image/itemSlider/New/ronaldo.jpg",
   },
-];
-
-// Footbal Info News
-
-let newFootbalNews = [
   {
     id: 'newFootbalNews1',
     title: "فوتبال رئال مادرید و بارسلونا",
@@ -52,9 +47,6 @@ let newFootbalNews = [
     title: "فوتبال بارسلونا و اتلتیکو مادرید",
     imageSrc: "../image/itemSlider/Footbal/New/BarcelonaVsatleticoMadrid.jpg",
   },
-];
-
-let controversialFootbalNews = [
   {
     id: 'controversialFootbalNews1',
     title: "فوتبال بارسلونا و اینترمیلان",
@@ -83,9 +75,6 @@ let controversialFootbalNews = [
     imageSrc:
       "../image/itemSlider/Footbal/Controversial/ManchesterCityVsManchesterUnited.jpg",
   },
-];
-
-let otherFootbalNews = [
   {
     id: 'otherFootbalNews1',
     title: "فوتبال الاتحاد و الهلال",
@@ -106,11 +95,6 @@ let otherFootbalNews = [
     title: "فوتبال النصر و اینترمیامی",
     imageSrc: "../image/itemSlider/Footbal/Other/InterMiamiVsAlNassr.jpg",
   },
-];
-
-// Game Info News
-
-let newGameNews = [
   {
     id: 'newGameNews1',
     title: "Surviving Mars: پایونیر در ماه می در متا کوئست فرود می آید",
@@ -136,9 +120,6 @@ let newGameNews = [
     title: "Forza : قیمت بازی فورزا در PS5",
     imageSrc: "../image/itemSlider/Game/New/Forza.jpg",
   },
-];
-
-let controversialGameNews = [
   {
     id: 'controversialGameNews1',
     title: "The Elder Scrolls IV: نسخه ریمستر در حال برسی است",
@@ -164,9 +145,6 @@ let controversialGameNews = [
     title: "تشابه عجیب بازی جدید راکستار با هیتمن",
     imageSrc: "../image/itemSlider/Game/Controversial/Remedy.jpg",
   },
-];
-
-let otherGameNews = [
   {
     id: 'otherGameNews1',
     title: "دشمن های روی مخ یا دوست های بامزه",
@@ -187,11 +165,6 @@ let otherGameNews = [
     title: "پابجی در برابر کالاف",
     imageSrc: "../image/itemSlider/Game/Other/pubgVsCallof.webp",
   },
-];
-
-// Video Info News
-
-let newVideoNews = [
   {
     id: 'newVideoNews1',
     title: "بهترین سریال های علمی تخیلی آمریکایی",
@@ -217,9 +190,6 @@ let newVideoNews = [
     title: "تقلب بهاره افشاری در پدرخوانده!",
     imageSrc: "../image/itemSlider/Video/New/gadfather.jpg",
   },
-];
-
-let controversialVideoNews = [
   {
     id: 'controversialVideoNews1',
     title: "بازگشت مهران مدیری به تلویزیون با طنز جدید!",
@@ -245,9 +215,6 @@ let controversialVideoNews = [
     title: "خودکشی کارگردان برنامه احسان علیخانی",
     imageSrc: "../image/itemSlider/Video/Controversial/killself.jpg",
   },
-];
-
-let otherVideoNews = [
   {
     id: 'otherVideoNews1',
     title: "وقتی ستاره‌ها نجوا می‌کنند",
@@ -268,27 +235,43 @@ let otherVideoNews = [
     title: "جو لاندو: ستاره تلویزیون که در آتش‌ سوزی بی‌ خانمان شد",
     imageSrc: "../image/itemSlider/Video/Other/fireHome.webp",
   },
-];
+]
 
 // get element
 const slider = $.querySelector(".slider");
+const mainContainer = $.querySelector('.mainContainer')
 
 // create function
-const addItemSlider = () => {
-  newFootbalNews.forEach((news) => {
-    slider.insertAdjacentHTML(
-      "beforeend",
-      `
-            <div>
-                <div class='imageboxSI'>
-                    <img class='imageSlider' src="${news.imageSrc}" alt='itemPoster' />
-                </div>
-                <h3 class='titleSI'>${news.title}</h3>
-            </div>
-            `
-    );
-  });
-};
+const checkNewsAddress = () => {
+  let id = window.location.hash.slice(1);
+  db.forEach(news => {
+    if(news.id === id){
+      mainContainer.insertAdjacentHTML('beforeend',`
+        <div class="imgaebox">
+          <img class='imageNews' src='${news.imageSrc}'/>
+        </div>
+        <h1 class="titleText">${news.title}</h1>
+        <p class="contentText">test</p>
+        `)
+    }
+  })
+}
+
+// const addItemSlider = () => {
+//   newFootbalNews.forEach((news) => {
+//     slider.insertAdjacentHTML(
+//       "beforeend",
+//       `
+//             <div>
+//                 <div class='imageboxSI'>
+//                     <img class='imageSlider' src="${news.imageSrc}" alt='itemPoster' />
+//                 </div>
+//                 <h3 class='titleSI'>${news.title}</h3>
+//             </div>
+//             `
+//     );
+//   });
+// };
 
 // add event
-window.addEventListener("load", addItemSlider);
+window.addEventListener("load", checkNewsAddress);
