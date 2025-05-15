@@ -25,10 +25,10 @@ function App() {
   ]
 
   let newSliderNews = [
-    {id: 'newSliderNews1', title: 'بازی اتلتیکومادرید و منچستریونایتد', imageSrc: 'image/itemSlider/New/atleticVsmanchester.jpg'},
-    {id: 'newSliderNews2', title: 'محمدرضا گلزار : بازیگر یا خواننده ؟', imageSrc: 'image/itemSlider/New/golzaaar.webp'},
-    {id: 'newSliderNews3', title: 'رئال بتیس در برابر فیورنتینا', imageSrc: 'image/itemSlider/New/RealBetisVsFiorentina.png'},
-    {id: 'newSliderNews4', title: 'وینرونی : رونالدو یعنی رونالدو نازاریو', imageSrc: 'image/itemSlider/New/ronaldo.jpg'},
+    {id: 'newSliderNewsFootbal1', title: 'بازی اتلتیکومادرید و منچستریونایتد', imageSrc: 'image/itemSlider/New/atleticVsmanchester.jpg'},
+    {id: 'newSliderNewsVideo2', title: 'محمدرضا گلزار : بازیگر یا خواننده ؟', imageSrc: 'image/itemSlider/New/golzaaar.webp'},
+    {id: 'newSliderNewsFootbal3', title: 'رئال بتیس در برابر فیورنتینا', imageSrc: 'image/itemSlider/New/RealBetisVsFiorentina.png'},
+    {id: 'newSliderNewsFootbal4', title: 'وینرونی : رونالدو یعنی رونالدو نازاریو', imageSrc: 'image/itemSlider/New/ronaldo.jpg'},
   ]
 
   // Footbal Info News
