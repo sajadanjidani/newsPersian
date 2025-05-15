@@ -37,6 +37,15 @@ let videoNews = [
     {id: 9, title: 'خداحافظی با ریچارد چمبرلین', imageSrc: '../image/itemSlider/Video/Controversial/rechald.jpg'},
 ]
 
+// get element
+
+const menuModule = document.querySelector('#menuModule')
+const coverModule = document.querySelector('#coverModule')
+const openIcon = document.querySelector('#openMenu')
+const closeIcon = document.querySelector('#closeMenu')
+
+// create function
+
 let locationHash = window.location.hash; 
 
 const whatCategory = () => {
@@ -67,6 +76,25 @@ const loadNews = News => {
     `)
 }
 
+const openMenu = () => {
+    openIcon.style.display = 'none'
+    closeIcon.style.display = 'block'
+    menuModule.style.display = 'block'
+    coverModule.style.display = 'block'
+}
+const closeMenu = () => {
+    openIcon.style.display = 'block'
+    closeIcon.style.display = 'none'
+}
+const moduleHandler = () => {
+    menuModule.style.display = 'none'
+    coverModule.style.display = 'none'
+    openIcon.style.display = 'block'
+    closeIcon.style.display = 'none'
+}
+
+// add event
+
 window.addEventListener('load', whatCategory)
 document.querySelectorAll('a.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -76,3 +104,6 @@ document.querySelectorAll('a.nav-link').forEach(link => {
       window.location.reload();
     });
   });
+coverModule.addEventListener('click', moduleHandler)
+openIcon.addEventListener('click', openMenu)
+closeIcon.addEventListener('click', closeMenu)

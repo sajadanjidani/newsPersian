@@ -15,7 +15,6 @@ body {
 
 
 /* header */
-
 .headerContainer{
     position: relative;
     z-index: 50;
@@ -23,10 +22,6 @@ body {
     height: 75px;
     position: fixed;
     background-color: black;
-}
-
-#logoHome{
-    color: black;
 }
 
 .contentContainer{
@@ -37,19 +32,18 @@ body {
     margin: 0 auto;
 }
 
-.iconbox{
-    display: none;
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
+#logoHome{
+    color: black;
 }
 
-.openMenuBtn{
-    display: block;
-}
-.closeMenuBtn{
+.openIcon{
     display: none;
+    margin-top: 10px;
+}
+
+.closeIcon{
+    display: none;
+    margin-top: 7px;
 }
 
 .imagebox{
@@ -85,6 +79,31 @@ a:hover{
     color: #484848;
 }
 
+/* menu module */
+.menuModule{
+    display: none;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: black;
+}
+
+.listModule{
+    display: grid;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.coverModule{
+    display: none;
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 @media (max-width : 450px){
     .contentContainer{
         justify-content: space-between;
@@ -92,10 +111,12 @@ a:hover{
     .listboxHeader{
         display: none;
     }
-    .iconbox{
-        display: flex;
+    .openIcon{
+        display: block;
     }
 }
+
+
 
 
 
