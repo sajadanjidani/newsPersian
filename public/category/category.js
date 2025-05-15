@@ -115,8 +115,8 @@ const moduleHandler = () => {
 const clickHandler = () => {
   setTimeout(() => {
     if(window.location.hash !== locationHash){
-        console.log('yes')
-      window.location.reload();
+        window.scrollTo(0, 0);
+        window.location.reload();
     }
   }, 1)
 }

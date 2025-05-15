@@ -154,6 +154,7 @@ a:hover{
 }
 .contentText{
     width: 94%;
+    line-height: 40px;
     text-align: justify;
     margin: 30px auto;
 }
@@ -269,5 +270,15 @@ a:hover{
     }
     .customeListStyle{
         display: none;
+    }
+    .imgaebox{
+        height: 250px;
+    }
+    .titleText{
+        font-size: 25px;
+        padding: 0 20px;
+    }
+    .contentText{
+        padding: 0 20px;
     }
 }

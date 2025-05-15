@@ -9,9 +9,9 @@ const Footer = () => {
             <div className={styles.listbox}>
                 <ul>
                     <li><a href="../category/category.html#Game">اخبار بازی</a></li>
-                    <li class='customeListStyle'>/</li>
+                    <li class={styles.customeListStyle}>/</li>
                     <li><a href="../category/category.html#Footbal">اخبار فوتبال</a></li>
-                    <li class='customeListStyle'>/</li>
+                    <li class={styles.customeListStyle}>/</li>
                     <li><a href="../category/category.html#Video">اخبار فیلم و سریال</a></li>
                 </ul>
             </div>
