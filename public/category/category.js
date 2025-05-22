@@ -129,6 +129,7 @@ document.querySelectorAll('a.nav-link').forEach(link => {
       e.preventDefault();
       console.log(e.target.href)
       window.location.href = e.target.href;
+      window.scrollTo(0, 0);
       window.location.reload();
     });
   });
