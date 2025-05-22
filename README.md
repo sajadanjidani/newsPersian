@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Persion News
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Persion News** is an open-source Persian-language news website that focuses on popular topics such as **football**, **movies and TV shows**, and **video games**. The project is built with modern front-end technologies and aims to provide a clean and user-friendly experience for Persian-speaking users.
 
-## Available Scripts
+## 🛠 Technologies Used
 
-In the project directory, you can run:
+- HTML
+- CSS
+- JavaScript
+- Tailwind CSS
+- React
 
-### `npm start`
+## 📁 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+project-root/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+├── public/ # Static files and images
 
-### `npm test`
+├── src/ # Main React source files
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+│ ├── components/ # Reusable UI components
 
-### `npm run build`
+│ ├── pages/ # Main pages of the site
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+│ └── App.jsx # App entry point
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+├── tailwind.config.js # TailwindCSS configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+└── package.json # Project metadata and scripts
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the project locally:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository
+```bash
+git clone https://github.com/sajadanjidani/newsPersian.git
+```
+2. Navigate into the project directory
+```bash
+cd newsPersian
+```
+3. Install dependencies
+```bash
+npm install
+```
+4. Start the development server
+```bash
+npm run start
+```
+Make sure you have Node.js and npm installed on your machine.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##  API 🔌
+Currently, this project does not include a public API.
+An internal API for the admin dashboard is under development and will be added soon.
 
-## Learn More
+## 📄 License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is licensed under the [MIT License](LICENSE).  
+You are free to use, modify, and distribute it under the terms of the license.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+We welcome contributions from the community!  
+If you find a bug or have a feature request, feel free to [open an issue](https://github.com/sajadanjidani/newsPersian/issues).  
+To contribute code, fork the repository, create a branch, and submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Made with ❤️ for Persian content creators._
